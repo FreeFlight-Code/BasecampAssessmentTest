@@ -31,20 +31,21 @@ var canDrive;
 
 // CODE HERE
 
-age >= 16 [canDrive = true]
+if (age >= 16) { canDrive = true}
 
 // #8 Create an if statement inside of the responseCreator function that sets the colorResponse variable value based off of a passed in value. The param value passed in will be added in the unit test. If the param value is 'green' set colorResponse variable to 'Green is okay'. If the param value is 'red' set reponse variable to 'I heart red'. Otherwise set the colorResponse variable to 'What is your favorite color?'. Make sure to return the colorResponse variable at the end once it has been properly set.
 
 var colorResponse;
 
-var responseCreator = function(param){
+function responseCreator(param){
   // CODE HERE
-  if (param === 'green'){return "Green is okay"}
-  else if (param === 'red'){return 'I heart red'}
-  else {return 'What is your favorite color?'}
+  if (param === 'green'){colorResponse = "Green is okay"}
+  else if (param === 'red'){colorResponse = 'I heart red'}
+  else {colorResponse = 'What is your favorite color?'}
+  return colorResponse;
 }
-responseCreator()
-colorResponse = responseCreator;
+responseCreator(param)
+
 
 // #9 Create a function called 'sum' that takes in one parameter and returns the sum of that parameter added it itself.
 
